@@ -4,6 +4,15 @@ Open-source TypeScript tools for importing, validating, normalizing, and packagi
 
 Swiss tax data is hard because it is split across federal, cantonal, municipal, and sometimes church-tax sources. Formats vary by authority and year, municipalities can change, and public calculators need traceable source metadata rather than copied assumptions. This project helps developers prepare datasets safely; it does not provide official tax calculations by itself.
 
+## Project status
+
+`v0.1.0` is an initial toolkit release:
+
+- no official datasets are bundled;
+- fixture examples are sample-only;
+- source adapters are planned;
+- contributions are welcome, especially around validation, official-source research, and deterministic packaging.
+
 ## Scope
 
 - Validate source JSON files against a minimal public-safe data model.
@@ -64,7 +73,17 @@ Each dataset contains:
 - `records`: source records
 - `is_fixture`: required for sample data
 
-See [docs/data-model.md](docs/data-model.md) for the full model and validation rules.
+See [docs/data-model.md](docs/data-model.md) for the full model and validation rules. See [docs/examples.md](docs/examples.md) for practical CLI examples.
+
+## Good first issues
+
+Useful small contributions include:
+
+- JSON Schema export for the source-data model;
+- ESTV/FTA source adapter research with verified source notes;
+- canton source adapter template;
+- checksum verification helper;
+- municipality history helper.
 
 ## Why Codex Helps Maintain It
 
