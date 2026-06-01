@@ -1,0 +1,19 @@
+name: Validation rule request
+description: Suggest a schema or validation rule.
+title: "[Validation]: "
+labels: ["validation"]
+body:
+  - type: textarea
+    id: rule
+    attributes:
+      label: Proposed rule
+      description: Describe the validation rule and why it is needed.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source or rationale
+      description: Link official documentation where relevant.
+    validations:
+      required: true

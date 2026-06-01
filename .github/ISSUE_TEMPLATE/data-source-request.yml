@@ -1,0 +1,25 @@
+name: Data source request
+description: Request support for an official Swiss tax data source.
+title: "[Data source]: "
+labels: ["data-source"]
+body:
+  - type: input
+    id: authority
+    attributes:
+      label: Official authority
+      description: Federal, cantonal, municipal, or other official publisher.
+    validations:
+      required: true
+  - type: input
+    id: tax_year
+    attributes:
+      label: Tax year
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source details
+      description: Include verified official URLs only. Write TODO if verification is still needed.
+    validations:
+      required: true

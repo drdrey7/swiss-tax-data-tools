@@ -1,0 +1,31 @@
+{
+  "country": "CH",
+  "canton": "ZH",
+  "tax_year": 2024,
+  "tax_type": "municipal_income_tax_fixture",
+  "is_fixture": true,
+  "source": {
+    "name": "Fixture data for swiss-tax-data-tools tests",
+    "official_url": "https://example.invalid/fixture-only-not-an-official-source",
+    "retrieved_at": "2026-01-01",
+    "content_hash": "fixture-content-hash"
+  },
+  "records": [
+    {
+      "municipality": {
+        "id": "0261",
+        "name": "Zurich"
+      },
+      "tax_type": "municipal_income_tax_fixture",
+      "value": 2
+    },
+    {
+      "municipality": {
+        "id": "0001",
+        "name": "Fixture municipality"
+      },
+      "tax_type": "municipal_income_tax_fixture",
+      "value": 1
+    }
+  ]
+}

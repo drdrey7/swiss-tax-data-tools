@@ -1,0 +1,30 @@
+{
+  "name": "swiss-tax-data-tools",
+  "version": "0.1.0",
+  "description": "Tools to validate, normalize, and package Swiss tax source datasets for public calculator projects.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "swiss-tax-data": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "ci": "npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3",
+    "vitest": "^4.1.7"
+  }
+}
